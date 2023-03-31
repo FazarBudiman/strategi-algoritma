@@ -19,15 +19,13 @@ const Sequential = (num, search) => {
     }
 }
 
-let find = 1000000000
-
 // Assignment pada Array
-for (let index = 0; index < find; index++) {
+for (let index = 0; index < 10; index++) {
     Num[index] = index + 1
 }
 
 const startAt = performance.now()
-let sequentialSearch = Sequential(Num, find)
+let sequentialSearch = Sequential(Num, 10)
 const endAt = performance.now()
 
 console.log(`Performance is : ${endAt - startAt}` )
