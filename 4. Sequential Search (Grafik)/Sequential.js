@@ -1,4 +1,5 @@
 let Num = [];
+let number = 100000000;
 
 // Algoritma Sequentian Search
 const Sequential = (num, search) => {
@@ -19,13 +20,13 @@ const Sequential = (num, search) => {
     }
 }
 
-// Assignment pada Array
-for (let index = 0; index < 10; index++) {
+// Assignment pada Arraya
+for (let index = 0; index < number; index++) {
     Num[index] = index + 1
 }
 
 const startAt = performance.now()
-let sequentialSearch = Sequential(Num, 10)
+let sequentialSearch = Sequential(Num, number)
 const endAt = performance.now()
 
 console.log(`Performance is : ${endAt - startAt}` )
